@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('chinese-back.avif');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        
+        .card {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            border-radius: 10px;
+            max-width: 400px;
+            transition: width 1s, height 1s, background-color 1s;
+            animation-name: back-color;
+            animation-duration: 5s;
+            animation-delay: 2s;
+        }
+        @keyframes back-color{
+            0% {
+                background-color: brown;
+                bottom: 0;
+                left:0;
+            }
+            33% {
+                background-color: blueviolet;
+                bottom: 40px;
+                left: 40px;
+            }
+            66% {
+                background-color: lightcoral;
+                bottom:0;
+                left:80px;
+            }
+            100% {
+                background-color: black;
+                bottom:40px;
+                left:120px;
+            }
+
+        }
+        .card:hover{
+            width:600px;
+            height:300px;
+            background-color: brown;
+
+        }
+        
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: gold;
+        }
+        
+        p {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Fatiha's Courtyard</h1>
+        <p>Chinese Restaurant</p>
+        <p>📍 Main Street</p>
+        <p>📞 555-123-4567</p>
+        <p>🕒 11am - 10pm</p>
+        <p style="margin-top: 20px;">Welcome!</p>
+    </div>
+</body>
+</html>
